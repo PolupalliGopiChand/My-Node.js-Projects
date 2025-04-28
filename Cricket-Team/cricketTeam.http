@@ -8,29 +8,29 @@ POST http://localhost:3000/players/
 Content-Type: application/json
 
 {
-  "playerName": "Dhoni",
-  "jerseyNumber": 7,
-  "role": "Wicket Keeper"
+  "playerName": "Vishal",
+  "jerseyNumber": 17,
+  "role": "Bowler"
 }
 
 ###
 
 ### Get player by ID (API 3)
-GET http://localhost:3000/players/10/
+GET http://localhost:3000/players/14/
 
 ###
 
 ### Update player by ID (API 4)
-PUT http://localhost:3000/players/1/
+PUT http://localhost:3000/players/14/
 Content-Type: application/json
 
 {
-  "playerName": "MS Dhoni",
-  "jerseyNumber": 7,
-  "role": "Captain"
+"playerName": "Maneesh",
+  "jerseyNumber": 54,
+  "role": "All-rounder"
 }
 
 ###
 
 ### Delete player by ID (API 5)
-DELETE http://localhost:3000/players/1/
+DELETE http://localhost:3000/players/12/
