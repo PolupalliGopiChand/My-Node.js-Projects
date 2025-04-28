@@ -1,0 +1,36 @@
+### Get all players (API 1)
+GET http://localhost:3000/players/
+
+###
+
+### Add a new player (API 2)
+POST http://localhost:3000/players/
+Content-Type: application/json
+
+{
+  "playerName": "Dhoni",
+  "jerseyNumber": 7,
+  "role": "Wicket Keeper"
+}
+
+###
+
+### Get player by ID (API 3)
+GET http://localhost:3000/players/10/
+
+###
+
+### Update player by ID (API 4)
+PUT http://localhost:3000/players/1/
+Content-Type: application/json
+
+{
+  "playerName": "MS Dhoni",
+  "jerseyNumber": 7,
+  "role": "Captain"
+}
+
+###
+
+### Delete player by ID (API 5)
+DELETE http://localhost:3000/players/1/
