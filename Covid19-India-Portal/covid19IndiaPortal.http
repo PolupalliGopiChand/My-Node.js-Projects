@@ -1,0 +1,56 @@
+### User Login - returns JWT token
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
+
+### Get all states
+GET http://localhost:3000/states/
+Authorization: Bearer <YOUR_JWT_TOKEN>
+
+### Get specific state by ID
+GET http://localhost:3000/states/2/
+Authorization: Bearer <YOUR_JWT_TOKEN>
+
+### Get state stats by ID
+GET http://localhost:3000/states/3/stats/
+Authorization: Bearer <YOUR_JWT_TOKEN>
+
+### Add a new district
+POST http://localhost:3000/districts/
+Authorization: Bearer <YOUR_JWT_TOKEN>
+Content-Type: application/json
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+### Get district by ID
+GET http://localhost:3000/districts/2/
+Authorization: Bearer <YOUR_JWT_TOKEN>
+
+### Update district by ID
+PUT http://localhost:3000/districts/2/
+Authorization: Bearer <YOUR_JWT_TOKEN>
+Content-Type: application/json
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+### Delete district by ID
+DELETE http://localhost:3000/districts/2/
+Authorization: Bearer <YOUR_JWT_TOKEN>
