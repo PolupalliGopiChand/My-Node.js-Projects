@@ -1,0 +1,32 @@
+###
+# Get all players
+GET http://localhost:3000/players/
+
+###
+# Get a player by ID
+GET http://localhost:3000/players/1/
+
+###
+# Update player name by ID
+PUT http://localhost:3000/players/1/
+content-type: application/json
+
+{
+  "playerName": "Raju"
+}
+
+###
+# Get match details by ID
+GET http://localhost:3000/matches/1/
+
+###
+# Get all matches of playerId 6
+GET http://localhost:3000/players/6/matches
+
+###
+# Get all players in matchId 1
+GET http://localhost:3000/matches/1/players
+
+###
+# Get player statistics (scores, fours, sixes) for playerId 1
+GET http://localhost:3000/players/1/playerScores
