@@ -1,0 +1,30 @@
+### API 1: Register a new user
+POST http://localhost:3000/register
+content-type: application/json
+
+{
+  "username": "konda7",
+  "name": "Adam Richard",
+  "password": "mass@7",
+  "gender": "male",
+  "location": "Detroit"
+}
+
+### API 2: Login user
+POST http://localhost:3000/login
+content-type: application/json
+
+{
+  "username": "konda7",
+  "password": "mass@7"
+}
+
+### API 3: Change user password
+PUT http://localhost:3000/change-password
+content-type: application/json
+
+{
+  "username": "konda7",
+  "oldPassword": "mass@7",
+  "newPassword": "r0nnn3"
+}
